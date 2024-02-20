@@ -36,7 +36,6 @@ body {
 button {
   font-family: "IM Fell DW Pica", serif;
   font-style: italic;
-  font-size: 1rem;
   color: #fafafa;
   padding: 10px 20px;
   border-radius: 10px;
@@ -282,7 +281,6 @@ button:active {
 }
 
 .button-text{
-	font-size: 7vh; 
 	margin: 0 0 0 20px; 
 	font-style: italic
 }
@@ -404,11 +402,17 @@ animation: twinkle 2.5s infinite alternate;
 }
 
 @media only screen and (min-width: 576px) {
+  button{
+    font-size: 1rem;
+  }
   .grid-container {
     padding: 5vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 20vw);
+  }
+  .button-text{
+    font-size: 5vh;
   }
   /* Row 1 */
   .item-1 {
@@ -478,5 +482,11 @@ animation: twinkle 2.5s infinite alternate;
     grid-column-start: 3;
     grid-row-start: 5;
     grid-row-end: span 4;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .button-text{
+    font-size: 7vh;
   }
 }

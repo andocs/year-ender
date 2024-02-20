@@ -490,17 +490,6 @@
 
 		document.body.addEventListener("scroll", moonScroll)
 
-
-		// window.addEventListener("scroll", function () {
-		// 	console.log('dasds');
-		// 	let value = window.scrollY;
-		// 	var h = Math.max(
-		// 		document.documentElement.clientHeight,
-		// 		window.innerHeight || 0
-		// 	);
-		// 	moon.style.top = (6 * h) / 100 + value * 1.02 + "px";
-		// });
-
 		const yearObserver = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
